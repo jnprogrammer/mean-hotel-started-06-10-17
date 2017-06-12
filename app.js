@@ -1,3 +1,4 @@
+require('./api/data/dbconnection.js').open();
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -25,4 +26,4 @@ var server = app.listen(app.get('port'),function(){
   console.log('Mean things happen on port:'+port);
 });
 
-console.log('Mean first');
+//console.log('Mean first');
